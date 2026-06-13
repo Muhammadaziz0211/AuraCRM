@@ -177,7 +177,7 @@ const Router = {
 };
 
 // ==========================================
-// VIEW COMPONENTS
+// VIEW COMPONENTS NAVBATRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
 // ==========================================
 const Views = {
     navbar() {
@@ -190,7 +190,7 @@ const Views = {
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between items-center h-16">
                         <div class="flex items-center cursor-pointer" onclick="Router.navigate('shop-home')">
-                            <span class="font-serif text-2xl font-bold tracking-wider text-slate-900 dark:text-white">AURA</span>
+                            <span class="font-serif text-2xl font-bold tracking-wider text-slate-900 dark:text-white">AURACRM</span>
                             ${isAdmin ? '<span class="ml-2 px-2 py-0.5 text-xs font-semibold bg-gold-500 text-white rounded">ERP</span>' : ''}
                         </div>
                         
@@ -233,6 +233,7 @@ const Views = {
         `;
     },
 
+    ////////////////////////// rasm 
     shopHome() {
         return `
             ${this.navbar()}
