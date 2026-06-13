@@ -15,7 +15,7 @@ const Store = {
         users: JSON.parse(localStorage.getItem('users')) || [],
         cart: JSON.parse(localStorage.getItem('cart')) || [],
         products: JSON.parse(localStorage.getItem('products')) || [
-            { id: 1, name: "Midnight Silk Blazer", category: "Outerwear", price: 450, size: ["M", "L", "XL"], color: "Black", stock: 15, image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=600&q=80", description: "Impeccably tailored silk blazer with satin lapels." },
+            { id: 1, name: "Midnight sjgbvjgajghv Blazer", category: "Outerwear", price: 450, size: ["M", "L", "XL"], color: "Black", stock: 15, image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=600&q=80", description: "Impeccably tailored silk blazer with satin lapels." },
             { id: 2, name: "Cashmere Turtleneck", category: "Knitwear", price: 280, size: ["S", "M", "L"], color: "Cream", stock: 24, image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=600&q=80", description: "Pure Mongolian cashmere, ethically sourced." },
             { id: 3, name: "Pleated Wool Trousers", category: "Bottoms", price: 195, size: ["30", "32", "34", "36"], color: "Charcoal", stock: 30, image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=600&q=80", description: "High-waisted pleated trousers in premium Italian wool." },
             { id: 4, name: "Oxford Cotton Shirt", category: "Shirts", price: 120, size: ["S", "M", "L", "XL"], color: "White", stock: 50, image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80", description: "Classic fit oxford shirt with mother-of-pearl buttons." },
