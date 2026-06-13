@@ -1,0 +1,35 @@
+name: Deploy Aura Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Copy files to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_KEY }}
+          source: "index.html,script.js"
+          target: "/tmp"
+
+      - name: Deploy Website
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            sudo cp /tmp/index.html /var/www/aura-crm/
+            sudo cp /tmp/script.js /var/www/aura-crm/
+            sudo chmod -R 755 /var/www/aura-crm
+            sudo systemctl reload nginx
