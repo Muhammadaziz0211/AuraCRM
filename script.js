@@ -190,7 +190,7 @@ const Views = {
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between items-center h-16">
                         <div class="flex items-center cursor-pointer" onclick="Router.navigate('shop-home')">
-                            <span class="font-serif text-2xl font-bold tracking-wider text-slate-900 dark:text-white">AURACRM</span>
+                            <span class="font-serif text-2xl font-bold tracking-wider text-slate-900 dark:text-white">ajhsdgkahgh</span>
                             ${isAdmin ? '<span class="ml-2 px-2 py-0.5 text-xs font-semibold bg-gold-500 text-white rounded">ERP</span>' : ''}
                         </div>
                         
@@ -233,7 +233,7 @@ const Views = {
         `;
     },
 
-    ////////////////////////// rasm 
+    ////////////////////////// rasm  bu
     shopHome() {
         return `
             ${this.navbar()}
@@ -244,7 +244,7 @@ const Views = {
                         <div class="absolute inset-0 bg-black/40 dark:bg-black/60"></div>
                     </div>
                     <div class="relative z-10 text-center text-white px-4 animate-slide-up">
-                        <p class="text-gold-400 font-medium tracking-[0.2em] mb-4 uppercase text-sm">Autumn / Winter 2024</p>
+                        <p class="text-gold-400 font-medium tracking-[0.2em] mb-4 uppercase text-sm">Autumn / Summer 2027</p>
                         <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">Elevate Your <br/>Everyday Essence</h1>
                         <p class="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl mx-auto font-light">Discover our curated collection of premium garments, crafted for those who appreciate the finer details.</p>
                         <button onclick="Router.navigate('shop-catalog')" class="px-8 py-4 bg-white text-slate-900 font-semibold rounded-sm hover:bg-gold-500 hover:text-white transition-all-300 transform hover:scale-105">
@@ -523,7 +523,7 @@ const Views = {
             ${this.footer()}
         `;
     },
-
+    // User akkaunt
     shopLogin() {
         return `
             ${this.navbar()}
@@ -595,7 +595,7 @@ const Views = {
             ${this.footer()}
         `;
     },
-
+    // Admin paollari
     adminLogin() {
         return `
             <div class="min-h-screen flex items-center justify-center px-4 bg-slate-50 dark:bg-slate-950 animate-fade-in">
